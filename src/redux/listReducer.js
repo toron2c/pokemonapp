@@ -62,7 +62,7 @@ export const listReducer = (state=initialState, action) => {
                     }
                 } else {
                     let el = state.allPokemon.find(el => el.name === action.name)
-                    console.log("el приходит сюда ===>",el);
+
                     return {
                         ...state,
                         findPokemon: {
